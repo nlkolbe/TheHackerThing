@@ -1,2 +1,2 @@
 # TheHackerThing
-Marcu
+Marcus' hacker simulator
