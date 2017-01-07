@@ -31,6 +31,7 @@
             System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("127.8.028.116");
             System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("18.048.116.45");
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("23.56.125.89");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("18.255.93.29");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIP));
             this.lblGettingIP = new System.Windows.Forms.Label();
             this.prbIP = new System.Windows.Forms.ProgressBar();
@@ -40,18 +41,20 @@
             // lblGettingIP
             // 
             this.lblGettingIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGettingIP.Location = new System.Drawing.Point(13, 13);
+            this.lblGettingIP.Location = new System.Drawing.Point(20, 20);
+            this.lblGettingIP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGettingIP.Name = "lblGettingIP";
-            this.lblGettingIP.Size = new System.Drawing.Size(258, 33);
+            this.lblGettingIP.Size = new System.Drawing.Size(387, 51);
             this.lblGettingIP.TabIndex = 0;
             this.lblGettingIP.Text = "IP: xxx.x.xxx.xxx";
             this.lblGettingIP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // prbIP
             // 
-            this.prbIP.Location = new System.Drawing.Point(13, 49);
+            this.prbIP.Location = new System.Drawing.Point(20, 75);
+            this.prbIP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.prbIP.Name = "prbIP";
-            this.prbIP.Size = new System.Drawing.Size(258, 23);
+            this.prbIP.Size = new System.Drawing.Size(387, 35);
             this.prbIP.TabIndex = 1;
             // 
             // lsvIPs
@@ -65,23 +68,26 @@
             this.lsvIPs.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2,
-            listViewItem3});
-            this.lsvIPs.Location = new System.Drawing.Point(13, 78);
+            listViewItem3,
+            listViewItem4});
+            this.lsvIPs.Location = new System.Drawing.Point(20, 120);
+            this.lsvIPs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lsvIPs.Name = "lsvIPs";
-            this.lsvIPs.Size = new System.Drawing.Size(258, 81);
+            this.lsvIPs.Size = new System.Drawing.Size(387, 125);
             this.lsvIPs.TabIndex = 2;
             this.lsvIPs.UseCompatibleStateImageBehavior = false;
             this.lsvIPs.View = System.Windows.Forms.View.List;
             // 
             // frmIP
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 175);
+            this.ClientSize = new System.Drawing.Size(424, 269);
             this.Controls.Add(this.lsvIPs);
             this.Controls.Add(this.prbIP);
             this.Controls.Add(this.lblGettingIP);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmIP";
